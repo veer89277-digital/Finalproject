@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row py-2"> 
+   <div class="col-sm-10 mx-auto">
+    <div class="row py-3">
+        <div class="col-sm-6 p-2">
+            <p class="fs-1 mt-3 text-center">About
+  <b class="text-mycolor1"> us</b></p>
+   <hr class="w-100">
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur delectus vel quisquam quasi sint iure enim tempora voluptate mollitia? Rerum alias facilis voluptas, doloribus, minus eveniet temporibus necessitatibus dolorem ut tempore ipsam reiciendis consequuntur in fuga inventore aperiam hic.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur delectus vel quisquam quasi sint iure enim tempora voluptate mollitia? Rerum alias facilis voluptas, doloribus, minus eveniet temporibus necessitatibus dolorem ut tempore ipsam reiciendis consequuntur in fuga inventore aperiam hic.</p>
+   <a class="btn btn-success">know More</a>
+        </div>
+        <div class="col-sm-6 p-2">
+            <img src="{% static 'images/c.jpg' %}" class="img-thumbnail imgabout w-100" >
+        </div>
+    </div>
+   </div>
+</div>
+{% endblock %}

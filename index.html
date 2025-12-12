@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+ <!--start slider-->
+
+         <div class="row slider">
+            <div class="text-center fs-1 text-light">Welcome to<b class="text-mycolor1"> KARMVEER</b> Private Limited</div>
+            <div class="text-light text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis expedita cum, <br>odit distinctio voluptates adipisci labore nihil totam in quae fuga provident aspernatur suscipit.<br> Incidunt itaque natus quibusdam dignissimos soluta.<br><br>
+            <a href="#" class="btn bg-mycolor1 rounded-pill">Register Now</a><br>
+        </div>
+
+
+
+         </div>
+        <!--end slider-->
+
+        <!-- start category -->
+         <div class="row">
+<p class="fs-3 text-center mt-5">Video 
+  <b class="text-mycolor1">Lecture </b></p>
+   <hr class="w-25 mx-auto">
+   <div class="col-sm-10 mx-auto">
+    <div class="row">
+        {% for row in data %}
+        <!-- start card -->
+        <div class="col-sm-3">
+            <div class="card shadow-lg my-3">
+                <img src="../{{row.cpic}}" class="card-img-top"/>
+                <p class="card-title text-center py-3"><b>{{row.category}}</b></p>
+                   
+            </div>
+        </div>
+        <!--end card -->
+        {% endfor %}
+    </div>
+   </div>
+
+
+</div>
+
+        <!-- end category -->
+
+       
+         <!--start services-->
+        <div class="row ">
+            <div class="col-sm-10 mx-auto">
+                <div class="row my-5">
+                    <div class="col-sm-3">
+                        <!--start services-->   
+                        <div class="card mx-auto shadow-lg p-3 border border-0 servicecard">
+                   <img src="{% static 'images/java.jpg' %}" class="card-img-top" alt="...">
+                   <div class="card-body">
+                   <h5 class="card-title text-center">java Technology</h5>
+                   <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <center> <a href="#" class="btn btn-outline-danger">Know More</a></center>
+                </div>
+            </div> 
+            </div>                             
+                        <!--end services-->  
+
+                    <div class="col-sm-3">
+                          <!--start services-->   
+                        <div class="card mx-auto shadow-lg p-3 border border-0 servicecard">
+                   <img src="{% static 'images/C++.jpg' %}" class="card-img-top" alt="...">
+                   <div class="card-body">
+                   <h5 class="card-title text-center"> C++ Language</h5>
+                   <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <center> <a href="#" class="btn btn-outline-danger">Know More</a></center>
+                </div>
+            </div>                              
+                        <!--end services-->    
+                    </div>                   
+                    <div class="col-sm-3">
+                          <!--start services-->   
+                        <div class="card mx-auto shadow-lg p-3 border-0 servicecard">
+                   <img src="{% static 'images/html.jpg' %}" class="card-img-top" alt="...">
+                   <div class="card-body">
+                   <h5 class="card-title text-center"> HTML Language</h5>
+                   <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <center> <a href="#" class="btn btn-outline-danger">Know More</a></center>
+                </div>
+            </div>                              
+                        <!--end services-->    
+                         </div>
+                         <di class="col-sm-3">
+                              <!--start services-->   
+                        <div class="card mx-auto shadow-lg p-3 border-0 servicecard">
+                   <img src="{% static 'images/pw.jpg' %}" class="card-img-top" alt="...">
+                   <div class="card-body">
+                   <h5 class="card-title text-center">Physics Wallah</h5>
+                   <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <center> <a href="#" class="btn btn-outline-danger">Know More</a></center>
+                </div>
+            </div>                              
+                        <!--end services-->  
+                         </di>
+                </div>
+            </div>
+        </div>
+        <!--end services-->
+
+        <!--start about-->
+        <div class="row about bg-lightpy-4 " style="text-align: justify;">
+            <div class="col-sm-10 mx-auto"><p class="fs-3 text-center">About <b class="text-mycolor1">Us</b></p><hr class="w-25 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reiciendis magni tenetur quae ex! Qui a voluptas quo veniam recusandae optio rem fuga dicta quae! Nisi vel culpa officiis nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et necessitatibus, excepturi quae expedita sit laboriosam dolor, aspernatur recusandae deleniti maxime libero fugiat soluta? Alias voluptas itaque hic, quia non consequatur?</div>
+        </div>
+        <!--end about-->
+
+
+
+
+
+
+
+
+{% endblock %}

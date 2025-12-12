@@ -1,0 +1,218 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>akhilesh Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .bg-mycolor1{background:#F57C00;}
+        .bg-mycolor2{background: #00C853;}
+        .text-mycolor1{color: #F57C00;}
+        .text-mycolor2{color:#00C853;}
+        .slider{min-height: 450px; background: linear-gradient(rgba(0,0,0,.6)),url("{% static 'images/a.jpg' %}");background-size: cover; padding-top: 10%;background-attachment: fixed; }
+        .s{min-height: 200px;}
+        .contactus{min-height: 400px;}
+        .bfooter{min-height: 50px;}
+        .ufooter{min-height: 300px;}
+        .servicecard:hover{transform: scale(1.1); transition: 2s;}
+        .servicecard{transition: 2s;}
+        .gallery{min-height: 400px;}
+        .team{min-height: 200px;}
+        .imgteam{height: 300px;}
+        .menutext{font-size: 16px;padding-top: 10px;padding-left: 30px;}
+        .category{min-height: 200px;}
+        .caticon{border: 1px solid gray; border-radius:50%; transition: 2s; height:80px;width:80px;text-align:center;line-height: 80px;color:#4CAF50;}
+        .caticon:hover{background: orange; color: white; transition: 2s;}
+        .whyus{min-height: 300px;}
+        #menu{background: transparent !important;}
+        #menu ul li a:hover{color: white !important; transition: .3s;}
+        .whyic{height: 70px; width: 70px; font-size: 30px; border: 1px solid black; border-radius: 10px; padding: 15px;}
+        .iccontact{height: 40px; width: 40px; font-size: 20px; padding: 11px; border-radius: 50%; border: 1px solid white;}
+        .t{height: 50px;}
+        .ta{height: 120px;}
+        .imgcat{
+          height: 140px;
+        }
+        .imgabout{height: 370px;}
+
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row top py-4">          
+            <div class="col-sm-10 mx-auto">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="fs-2"><i class="fa-solid fa-graduation-cap"></i> SKILL<b class="text-mycolor2">EDGE</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div><b>
+                    <i class="fa-solid fa-phone-volume"></i> Call Us</b><br>7238858515</div>
+                    </div>
+                    <div class="col-sm-3"><b>
+                     <i class="fa-solid fa-envelope"></i>Mail Us</b><br>veer89277@gmail.com</div>
+                    <div class="col-sm-3 text-end">
+                        <a href="#" class="btn bg-mycolor2 rounded-pill mt-1">Contact Us</a>
+                    </div>
+                </div>
+            </div>          
+        </div>
+        
+        <!--start menu-->
+
+          <div class="row bg-success" style="min-height: 45px;">
+            <div class="col-sm-9 mx-auto">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary " id="menu">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/home/">
+            <i class="fa-solid fa-house"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/video/">
+            <i class="fa-solid fa-circle-info"></i>Video Lecture</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/aboutus/">
+            <i class="fa-solid fa-circle-info"></i> About US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/wchoose/">
+          <i class="fa-solid fa-toolbox"></i> Why Choose Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/team/">
+            <i class="fa-brands fa-product-hunt"></i> Our Mentor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/category/">
+            <i class="fa-brands fa-product-hunt"></i> course category</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/gallery/">
+            <i class="fa-solid fa-image"></i> Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact/">
+            <i class="fa-solid fa-phone-volume"></i> Contact Us</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/">
+            <i class="fa-solid fa-right-to-bracket"></i> Login</a>
+        </li>
+        
+        </ul>
+        </div>
+        </div>
+       </nav>
+            </div>
+          </div>
+        <!--end menu-->
+
+       {% block content %}
+       
+       {% endblock %}
+       
+       
+               
+        <!--start category-->
+        <div class="row category py-4">
+
+           <p class="fs-3 text-center">Our <b class="text-mycolor1">Category</b></p><hr class="w-25 mx-auto">
+              <div class="col-sm-10 mx-auto">
+                <div class="row">
+                    <!--start category widget-->
+                    <div class="col-sm-3 text-center">
+                        <i class="fa-solid fa-user caticon  fs-1 mb-3"></i>
+                        <h3>30,000+</h3>
+                        <p>Lorem, ipsum dolor facilis veniam nulla incidunt officiis sed!</p>
+                    </div>
+                    <!--end category widget-->
+                     <!--start category widget-->
+                    <div class="col-sm-3 text-center">
+                        <i class="fa-solid fa-user caticon  fs-1 mb-3"></i>
+                        <h3>30,000+</h3>
+                        <p>Lorem, ipsum dolor facilis veniam nulla incidunt officiis sed!</p>
+                    </div>
+                    <!--end category widget-->
+                     <!--start category widget-->
+                    <div class="col-sm-3 text-center">
+                        <i class="fa-solid fa-user caticon fs-1 mb-3"></i>
+                        <h3>30,000+</h3>
+                        <p>Lorem, ipsum dolor facilis veniam nulla incidunt officiis sed!</p>
+                    </div>
+                    <!--end category widget-->
+                     <!--start category widget-->
+                    <div class="col-sm-3 text-center">
+                        <i class="fa-solid fa-user caticon  fs-1 mb-3"></i>
+                        <h3>30,000+</h3>
+                        <p>Lorem, ipsum dolor facilis veniam nulla incidunt officiis sed!</p>
+                    </div>
+                    <!--end category widget-->
+                 
+                </div>
+              </div>
+            
+        </div>
+        <!--end category-->
+  
+
+
+        <!--start ufooter-->
+        <div class="row ufooter bg-dark">
+          <div class="col-sm-10 mx-auto">
+            <div class="row">
+                  <div class="col-sm-3 text-light p-3">
+                <h3>Contact Address</h3>
+                <p class="pt-4"> GORAKHPUR</p>
+                <p><i style="color:green; "class="fa-solid fa-phone fs-3"></i> +91-7523033484</p>
+                <p><i style="color:green "class="fa-solid fa-phone fs-3"></i> +91-7267809808</p>
+                <p><i style="color:blue;"class="fa-brands fa-facebook fs-3"></i> KARM VEER</p>
+                <p><i style="color:red;" class="fa-brands fa-instagram fs-3"></i>   digitalcreator-16</p>
+                <p><i style="color:green;"class="fa-brands fa-whatsapp fs-3"></i> +91-7238858515</p>
+            </div>
+            <div class="col-sm-3 text-light menutext">
+                <p><i style="color: #FF1744" class="fa-solid fa-arrow-right"></i> Home</p>
+                <p><i style="color:#FF1744" class="fa-solid fa-arrow-right"></i> About Us</p>
+                <p><i style="color:#FF1744" class="fa-solid fa-arrow-right"></i> Services</p>
+                <p><i style="color:#FF1744"class="fa-solid fa-arrow-right"></i> Gallery</p>
+                <p><i style="color:#FF1744"class="fa-solid fa-arrow-right"></i> Category</p>
+            </div>
+            <div class="col-sm-3 text-light menutext">
+                <p><i style="color:#FF1744"class="fa-solid fa-arrow-right"></i> Home</p>
+                <p><i style="color:#FF1744" class="fa-solid fa-arrow-right"></i> About Us</p>
+                <p><i style="color:#FF1744"class="fa-solid fa-arrow-right"></i> Services</p>
+                <p><i style="color:#FF1744"class="fa-solid fa-arrow-right"></i> Gallery</p>
+                <p><i style="color:#FF1744"class="fa-solid fa-arrow-right"></i> Category</p>
+            </div>
+            <div class="col-sm-3 p-3 text-light">
+                <h4>About website</h4>
+                <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum velit corrupti similique odio sequi. Cupiditate natus explicabo facilis ab maiores. Ducimus voluptate provident sequi quas magnam temporibus! Quod, alias!</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!--end ufooter-->
+
+        <!--start bfooter-->
+        <div class="row bfooter bg-dark">
+            <span class="text-light text-center pt-3">Developed by &copy;<a href="https://www.instagram.com/akhilesh_gautam_143?igsh=MWRyaHprdXlucGI3Mg==" target="_blank">KARMVEER</a></span>
+        </div>
+        <!--end bfooter-->
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>

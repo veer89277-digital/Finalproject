@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+ <div class="row py-2">
+    <p class="fs-3 text-center mt-5">course 
+  <b class="text-mycolor1"> category</b></p>
+   <hr class="w-25 mx-auto">
+   <div class="col-sm-10 mx-auto">
+    <div class="row py-3">
+        <div class="col-sm-3 mx-auto">
+            <!-- start featured section -->
+             
+  <div class="card-header shadow-lg w-100 bg-mycolor1 text-center text-info fs-2  ">
+    lecture category
+  <ul class="list-group list-group-flush">
+    {% for x in data1 %}
+    <li class="list-group-item p-3 ">
+      <img src="../{{x.cpic}}" height="45px" class="img-thumbnail">
+      <span class="fs-5"> </span>{{x.category}} </li>
+      {% endfor %}
+    <!-- <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li> -->
+  </ul>
+  </div>
+
+            <!-- end featured section -->
+        </div>
+        <div class="col-sm-9">
+          {% for y in data %}
+            <!-- category Right first start -->
+             <div class="card mb-6 shadow-lg border border-0 m-3" >
+  <div class="row g-0 ">
+    <div class="col-md-4 mx-auto">
+      <iframe class="img-thumbnail" style="min-height: 268px;" src= "{{ y.vlink }}" frameborder="0"></iframe>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body text-left">
+        <h5 class="card-title"> {{y.title}} </h5>
+       
+        <p class="card-text">{{ y.description }}</p>
+        <p class="card-text"><b>lecture by:</b>{{ y.mentor }}</p>
+        <p> <b>mentor:</b>&nbsp; &nbsp; <span> category</span></p>
+        <p class="card-text"><small class="text-body-secondary"><b>added Date :</b> 2025-07-25</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+            <!-- category Right first end -->
+             {% endfor %}
+           
+        </div>
+    </div>
+   </div>
+ </div>
+{% endblock %}
